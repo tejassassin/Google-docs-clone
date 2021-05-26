@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 const Document = require("./Document");
 
-// mongoose.connect("mongodb://localhost/google-docs-clone", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useFindAndModify: false,
-//   useCreateIndex: true,
-// })
+
+
+
+// mongoose
+//   .connect("mongodb://localhost/google-docs-clone", {
+
 
 mongoose
-  .connect("mongodb://localhost/google-docs-clone", {
+  .connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true 
   })
